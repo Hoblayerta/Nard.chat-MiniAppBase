@@ -7,7 +7,7 @@ Nard Chat is a decentralized social platform built as a Farcaster MiniApp that a
 - **Farcaster Integration**: Native MiniApp with Frame SDK support
 - **Blockchain Posts**: Upload posts directly to smart contracts on Base
 - **Wallet Authentication**: Connect and authenticate with Web3 wallets
-- **Decentralized Storage**: Content stored on-chain with IPFS integration
+- **Decentralized Storage**: Content stored on-chain 
 - **Real-time Notifications**: Background notifications via Redis
 - **Responsive Design**: Mobile-first design optimized for Farcaster
 
@@ -90,7 +90,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view the application.
 
 1. **Connect Wallet**: Click "Connect Wallet" to authenticate with your Web3 wallet
 2. **Create Posts**: Use the post creation interface to write content
-3. **Upload to Blockchain**: Click "Upload to Blockchain" to store your post on Base
+3. **Upload to Blockchain**: If you are admin of your community Click "Upload to Blockchain" to store your post on Base
 4. **View Transactions**: Check your transactions on [Base Sepolia Blockscout](https://base-sepolia.blockscout.com/)
 
 ## 🏗️ Architecture
