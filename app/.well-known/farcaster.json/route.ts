@@ -1,0 +1,44 @@
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  const manifest = {
+    accountAssociation: {
+      header: "eyJmaWQiOjEyODI1ODEsInR5cGUiOiJhdXRoIiwia2V5IjoiMHg1MjdGNjEyM2MzQTM5RTg3QjFCNWZGYkMxODVmMjE3NEVDMzIzRWRiIn0",
+      payload: "eyJkb21haW4iOiJtaW5pbmFyZGNoYXQudmVyY2VsLmFwcCJ9",
+      signature: "VBaOWvmWiZWsczJQD2iCHc3r6YDckt1164k0gdZWXJoHhtrIWeHtYMjhJ1yJ9wnAqTwD4p5cpAorMMAMLn5Urxw="
+    },
+    frame: {
+      name: "Nard.chat",
+      tags: [
+        "social",
+        "messaging",
+        "community"
+      ],
+      homeUrl: "https://mininardchat.vercel.app",
+      iconUrl: "https://nard-chat.onrender.com/assets/nard-chat-logo.png",
+      tagline: "DECENTRALIZED NARRATIVES",
+      version: "1",
+      imageUrl: "https://nard-chat.onrender.com/assets/nard-chat-logo.png",
+      subtitle: "By LaBlocka",
+      ogImageUrl: "https://nard-chat.onrender.com/assets/nard-chat-logo.png",
+      webhookUrl: "https://mininardchat.vercel.app/api/webhook",
+      buttonTitle: "Open Nard.chat",
+      description: "Decentralized mini-app for creating and sharing narratives on Sepolia Base",
+      heroImageUrl: "https://nard-chat.onrender.com/assets/nard-chat-logo.png",
+      ogDescription: "Decentralized mini-app for creating and sharing narratives on Sepolia Base",
+      screenshotUrls: [
+        "https://nard-chat.onrender.com/assets/nard-chat-logo.png"
+      ],
+      splashImageUrl: "https://nard-chat.onrender.com/assets/nard-chat-logo.png",
+      primaryCategory: "social",
+      splashBackgroundColor: "#1a1a1a"
+    }
+  };
+
+  return NextResponse.json(manifest, {
+    headers: {
+      'Content-Type': 'application/json',
+      'Cache-Control': 'public, max-age=0'
+    }
+  });
+}
